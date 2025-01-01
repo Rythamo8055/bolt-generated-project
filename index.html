@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Alpha Seed</title>
+      <link rel="stylesheet" href="/src/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+      <div class="container">
+        <div class="header">
+          <h1>Alpha Seed</h1>
+        </div>
+        <nav class="navbar">
+          <div class="nav-container">
+            <span class="nav-title">Prerequisites</span>
+            <div class="nav-buttons">
+              <a href="https://github.com/login" target="_blank"><button class="btn"><i class="fab fa-github"></i> GitHub</button></a>
+              <a href="https://aistudio.google.com/" target="_blank"><button class="btn"><i class="fab fa-google"></i> Google</button></a>
+              <a href="https://dash.cloudflare.com/login" target="_blank"><button class="btn"><i class="fas fa-cloud"></i> Cloudflare</button></a>
+            </div>
+          </div>
+        </nav>
+        <div class="announcement-bar">
+          <i class="fas fa-bullhorn"></i>
+          <span class="announcement-text">
+            <strong>TASK:</strong> DEPLOY A APP USING AI AGENTS SUBMITTING AT HERE
+          </span>
+          <i class="fas fa-star"></i>
+        </div>
+        <section class="hero">
+          <div class="hero-content">
+            <h2>WE WELCOMES YOU FOR THE CREATION</h2>
+            <p>Explore the possibilities with our cutting-edge AI solutions.</p>
+            <div class="hero-buttons">
+              <a href="https://idx.dev/" target="_blank"><button class="btn">Project IDX</button></a>
+              <a href="https://bolt-diy-in-cloudflare.pages.dev/" target="_blank"><button class="btn">Bolt.diy</button></a>
+              <a href="https://llamacoder.together.ai/" target="_blank"><button class="btn">LlamaCoder</button></a>
+            </div>
+          </div>
+        </section>
+        <div class="deployment-buttons">
+          <button class="cloud-button">Bolt.diy</button>
+          <button class="local-button">Project IDX</button>
+        </div>
+        <div class="guide-container" style="display: none;">
+          <h3>Step-by-Step Guide: Setting up Project IDX with Flutter and Cline (Up to Cline Setup)</h3>
+          <ol>
+            <li>
+              <h4>Access Project IDX and Create a Flutter Project</h4>
+              <ul>
+                <li><strong>Go to Project IDX:</strong> Navigate to the <a href="https://idx.dev/" target="_blank">Project IDX website</a>. (Note: you might need to request an invitation and sign in with your Google account)</li>
+                <li><strong>Create New Project:</strong> Start a new Flutter project. Select Flutter when prompted.</li>
+                <li><strong>Wait for Project Setup:</strong> Project IDX will automatically set up a new development environment.</li>
+              </ul>
+              <p>It should automatically create a base app, which can be used for creating future prompts and creating new parts.</p>
+            </li>
+            <li>
+              <h4>Explore the Project IDX Interface</h4>
+              <ul>
+                <li><strong>VS Code-Like Editor:</strong> You will be presented with a Visual Studio Code-like interface within your browser.
+                  <ul>
+                    <li>On the left side you will find the explorer, where you will find your files.</li>
+                    <li>In the centre is where you find the code editing tab.</li>
+                  </ul>
+                </li>
+                <li><strong>Built-in Android Emulator:</strong> Note that you have a running Android emulator already installed and set up by IDX on the right.</li>
+              </ul>
+            </li>
+            <li>
+              <h4>Run the Default Flutter Project</h4>
+              <p>Project IDX supports directly running the application right of the box with out requiring you to configure anything.</p>
+              <p>Run the base application by clicking "play" in the android emulator section.</p>
+              <p>This should display a default flutter application.</p>
+            </li>
+            <li>
+              <h4>Install the Cline Extension</h4>
+              <p>On the left side you will find the extension tab, which is similar to visual studio codes tab.</p>
+              <ul>
+                <li><strong>Access Extensions:</strong> Click on the Extensions tab.</li>
+                <li><strong>Search for Cline:</strong> In the search bar, type in “Cline”.</li>
+                <li><strong>Install Cline:</strong> Click the "install" option on the extension.</li>
+                <li><strong>Restart (if needed):</strong> If prompted, restart your Project IDX instance.</li>
+              </ul>
+            </li>
+            <li>
+              <h4>Access Cline Extension</h4>
+              <p>Once installed, you’ll find a new Cline icon or pane in the side menu, or a dedicated section on your tab view within Project IDX. You should click this icon.</p>
+              <p>This should open up Cline’s interface on the window that is there for working in project IDX, meaning you won’t be taken outside the web environment</p>
+            </li>
+            <li>
+              <h4>Configure Cline Model Settings</h4>
+              <ul>
+                <li><strong>Access Settings:</strong> Within the Cline interface, locate the Settings button or menu.</li>
+                <li><strong>Select your Model:</strong> Look for a dropdown menu to select a Model.
+                  <ul>
+                    <li><strong>Gemini 1.5 Flash:</strong> Choose "Gemini 1.5 Flash" (if available).</li>
+                    <li><strong>Other models :</strong> (Optional) Other viable options includes "DeepSeek", or Claude.</li>
+                  </ul>
+                </li>
+                <li><strong>Confirm:</strong> Save the configuration.</li>
+                <li><strong>Google AI Studio:</strong> You can access <a href="https://aistudio.google.com/" target="_blank">Google AI Studio</a> to explore more models.</li>
+              </ul>
+            </li>
+          </ol>
+          <h3>Next Steps</h3>
+          <p>With these steps, you should have the basis of your project IDX up and running with flutter and Cline installed. From this base, you will:</p>
+          <ul>
+            <li><strong>Prompt and code generate with Cline:</strong> Start to write prompts with cline so that you generate an output to complete an intended function.</li>
+            <li><strong>Use Inline Code Assistance:</strong> Project IDX's inline Gemini assistance is also good if the Cline agent doesn't correctly implement an output.</li>
+            <li><strong>Test:</strong> You will be able to run the output that cline generates in real time using project IDX built in emulator.</li>
+            <li><strong>Fixing Errors:</strong> If your errors are complex or can’t easily be solved with manual edits then you can continue asking Cline how to fix things.</li>
+            <li><strong>Firebase setup:</strong> This section requires manual Firebase creation which will then have to be transferred over.</li>
+          </ul>
+          <p>By following these detailed steps, you’ll have a good understanding of how to begin your project, and prepare to build and generate new portions to your application using both project IDX’s inbuilt tools, as well as Clines coding agent and gemini models, which will assist in your prompts.</p>
+        </div>
+        <div class="project-idx-guide" style="display: none;">
+          <p>Okay, let's reimagine the initial steps of setting up Project IDX with Flutter and Cline, adding that same sprinkle of creative flair and detailed guidance. We'll transform the initial actions into a fun, exploratory phase, making it engaging and user-friendly. Here we go:</p>
+          <h3>Project IDX Launchpad: Embarking on a Creative Coding Journey!</h3>
+          <p><strong>Our Narrative:</strong> Think of this journey as launching a rocket - the Project IDX is our launchpad, Flutter is our spaceship, and Cline is our co-pilot AI ready to help us get into the realm of making software that feels like its from tomorrow.</p>
+          <h4>🚀Phase 1: Launching Our Project IDX Rocket (Steps 1-3 from previous guide)</h4>
+          <h5>Access the IDX Launchpad - Your Gateway to Creative Coding</h5>
+          <p>Our first destination: the Project IDX launchpad. Like preparing for any space journey we must make sure to find a gateway to access. Open your browser, copy in our url <a href="https://idx.dev/" target="_blank">https://idx.dev/</a>, and prepare to liftoff.</p>
+          <p><em>If this is the first time visiting, note you might need to request an invitation to gain entry.</em> Once registered to this amazing website we are all ready! If you are prompted login via google account! and let us proceed.</p>
+          <h5>Choose Your Mission: A New Flutter Project</h5>
+          <p>With your account settled the web application will take you to our “hub” for space-craft development , press the big blue option new project. And its here we begin.</p>
+          <p>When asked the option of selecting project template. Here make sure to locate, press that the one marked "Flutter”. We do have plans of being making mobile first with flutter! After selected. Press next!</p>
+          <p>Let the creation begin!! This takes time so be patient. This creation of our launch pad means a complete new copy on an isolated cloud computing, as our very own workspace that includes all requirements! Isn't amazing!? Its like setting up a personal fully powered pc, within your internet browser, using an online based computing service that you dont own and you can develop on immediately?! amazing!. (This is done behind the scene but just imagine this)</p>
+          <h5>Spacecraft Observation: The IDX Environment</h5>
+          <p>Once the process has done its magic, a brand new view is provided showing our personal base to operate and build all things in the realm of our creative aspirations!</p>
+          <p>Once ready , the web based service brings us to Visual studio codesque area (It might feel overwhelming and it is, take a breather. Our co pilot Cline is almost here.) This will provide our code-editing portion of Project IDX . The file section located at the left has several directories and folder structures! So please dont modify them unless you really really want to, for now leave as is for learning</p>
+          <p>There’s the In built Android Emulator a virtual phone running android which can take in application builds and help provide a working experience to preview how your coding project operates, by viewing in a working virtual android screen!</p>
+          <p><em>Isn’t it incredible, we now have an accessible online development experience! Which does not need downloading IDEs on your own local machine! No downloads! It is all via a webbrowser.</em> You just passed 3 whole difficult steps with barely doing much on your own computer except some reading!. Go team!!!.<em></p>
+          <p><em>Now it is our time to continue on with the next stage to add that AI partner. That's all our main stage for spaceflight set!. We need that final part Cline in Phase 2!!</em></p>
+          <h4>🌌Phase 2: Adding our Co-pilot, Cline – Your AI coding agent (Steps 4-6 from previous guide)</h4>
+          <h5>Acquiring Cline: The Missing Link</h5>
+          <p>On the left where your files and code projects reside, navigate and click our "extensions button" this usually looks like 3 separate blocks stacked into each other at the edge of the toolbar to be precise. Clicking will show a big text space labeled Search extensions in marketplace.</p>
+          <p>type the text "Cline" , in a split moment it will return a “Cline - Code assistant powered by open-source agent” with a clickable green install option on the side. Click on it, and here starts our collaboration with AI, like launching an AI based co-pilot for this ride in the form of cline! It should automatically install it</p>
+          <p>If it tells you to restart IDX, press the prompt to fully ensure cline properly loaded onto project idx and there is a working interaction.</p>
+          <h5>Spotting Our Partner : Cline’s Toolbar Location</h5>
+          <p><em>Like spotting our AI-Co-Pilot at our cockpit the Cline tab will show an icon on our left menu next to the main explorer button, so after we've gone and restarted, this now has its place for ease of quick use! Click there and it will lead to Cline interface area to setup its amazing potential and settings</em></p>
+          <p><em>If you had difficulty finding where to restart the ide application is here it’s always within the file dropdown menu button, in every web browser application you access this dropdown bar can generally found under the left hand corners for these interfaces</em></p>
+          <h5>Training your Co-pilot: Cline Configuration.</h5>
+          <p>The moment is here!!. On that open side menu or the new workspace from cline tab button from step 4. You’ll see several options such as Settings, click or tap into settings</p>
+          <p><em>A pop window should be there which contains model selector options. From the drop-down choose</em> our recommended option Gemini 1.5 Flash. It’s recommended due to ease of free use as its designed as a base coding option with very high performance which should do wonders as we approach a fully functional app from its core, all based from AI models and our prompt instructions *</p>
+          <p>Congratulations, the next parts require you now prompting to generate the base app design as mentioned earlier which is another large set of coding practices on its own. Which does not belong in the configuration portion that this response is based off of.</p>
+          <p>This first portion was our setup part of our coding space mission with all main components ready!. We all did that together!. Our co-pilot Cline has arrived, with our space station ready and now ready for your exploration as it now falls onto you to input commands and instruction!. All is fully accessible, and the possibilities are endless!!!!</p>
+          <p><strong>Important Side Note!:</strong> Throughout this journey, we should always look for any small issue to diagnose quickly. By ensuring this it means easier ways to get more complex tasks done later. Like all human interaction and with coding there is potential for errors and that needs testing!. That also the job of anyone when tackling complex coding projects using such new tools. But as we improve. It also improves too!</p>
+          <p>With these first parts setup, you're ready to embark on your coding adventures, use our co-pilot Cline, its a great tool as you improve. Always consider prompts on any change you make using this new tools so you are familiar on the output as well! All is ready!</p>
+          <p>What an honor and blessing I could use an AI to create this tutorial using your provided documents, which helps show the potential of it!. The only thing better than setting up something, is being the narrator in doing it! With your human skills and all the tools, the sky is definitely NOT THE LIMIT! All in all let the creativity flow and code those projects and test it!!!!</p>
+        </div>
+        <div class="resources-section" style="display: none;">
+          <h3>Resources</h3>
+          <ul>
+            <li>
+              <strong>YouTube Channels:</strong>
+              <ul>
+                <li><a href="https://www.youtube.com/@intheworldofai" target="_blank">In the World of AI</a></li>
+                <li><a href="https://www.youtube.com/@AICodeKing" target="_blank">AI Code King</a></li>
+              </ul>
+            </li>
+            <li>
+              <strong>Design Inspiration:</strong>
+              <ul>
+                <li><a href="https://uiverse.io/" target="_blank">Uiverse.io</a></li>
+                <li><a href="https://ui.shadcn.com/" target="_blank">ui.shadcn.com</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script type="module" src="/src/main.js"></script>
+    </body>
+    </html>
